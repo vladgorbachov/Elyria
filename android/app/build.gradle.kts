@@ -17,11 +17,11 @@ val localProperties = Properties().apply {
 }
 
 android {
-    namespace = "com.mindease.app"
+    namespace = "com.elyria.app"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.mindease.app"
+        applicationId = "com.elyria.app"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

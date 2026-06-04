@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MindEase"
+rootProject.name = "Elyria"
 include(":app")

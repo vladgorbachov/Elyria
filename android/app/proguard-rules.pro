@@ -1,1 +1,1 @@
-# MindEase release rules — expand when minify is enabled.
+# Elyria release rules — expand when minify is enabled.
