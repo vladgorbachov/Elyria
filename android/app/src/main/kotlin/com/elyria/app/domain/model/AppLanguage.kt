@@ -8,6 +8,12 @@ enum class AppLanguage(
     RUSSIAN("ru"),
     UKRAINIAN("uk"),
     ROMANIAN("ro"),
+    SPANISH("es"),
+    GERMAN("de"),
+    FRENCH("fr"),
+    PORTUGUESE_BR("pt-BR"),
+    PORTUGUESE("pt"),
+    DUTCH("nl"),
     ;
 
     companion object {

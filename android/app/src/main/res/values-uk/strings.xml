@@ -137,6 +137,12 @@
     <string name="settings_language_russian">Русский</string>
     <string name="settings_language_ukrainian">Українська</string>
     <string name="settings_language_romanian">Română</string>
+    <string name="settings_language_spanish">Español</string>
+    <string name="settings_language_german">Deutsch</string>
+    <string name="settings_language_french">Français</string>
+    <string name="settings_language_portuguese_br">Português (Brasil)</string>
+    <string name="settings_language_portuguese">Português</string>
+    <string name="settings_language_dutch">Nederlands</string>
     <string name="settings_language_failure">Не вдалося оновити мову. Спробуйте ще раз.</string>
     <string name="a11y_back">Назад</string>
     <string name="onboarding_tagline">Спокійний простір для настрою, практик і роздумів — лише на вашому пристрої.</string>

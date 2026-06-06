@@ -16,6 +16,12 @@ fun Context.withAppLanguage(language: AppLanguage): Context {
         AppLanguage.RUSSIAN -> Locale.forLanguageTag("ru")
         AppLanguage.UKRAINIAN -> Locale.forLanguageTag("uk")
         AppLanguage.ROMANIAN -> Locale.forLanguageTag("ro")
+        AppLanguage.SPANISH -> Locale.forLanguageTag("es")
+        AppLanguage.GERMAN -> Locale.forLanguageTag("de")
+        AppLanguage.FRENCH -> Locale.forLanguageTag("fr")
+        AppLanguage.PORTUGUESE_BR -> Locale.forLanguageTag("pt-BR")
+        AppLanguage.PORTUGUESE -> Locale.forLanguageTag("pt")
+        AppLanguage.DUTCH -> Locale.forLanguageTag("nl")
         AppLanguage.SYSTEM -> Locale.getDefault()
     }
 

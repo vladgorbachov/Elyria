@@ -280,6 +280,42 @@ private fun LanguageModeCard(
                 selected = selected,
                 onSelected = onSelected,
             )
+            LanguageOption(
+                label = stringResource(R.string.settings_language_spanish),
+                language = AppLanguage.SPANISH,
+                selected = selected,
+                onSelected = onSelected,
+            )
+            LanguageOption(
+                label = stringResource(R.string.settings_language_german),
+                language = AppLanguage.GERMAN,
+                selected = selected,
+                onSelected = onSelected,
+            )
+            LanguageOption(
+                label = stringResource(R.string.settings_language_french),
+                language = AppLanguage.FRENCH,
+                selected = selected,
+                onSelected = onSelected,
+            )
+            LanguageOption(
+                label = stringResource(R.string.settings_language_portuguese_br),
+                language = AppLanguage.PORTUGUESE_BR,
+                selected = selected,
+                onSelected = onSelected,
+            )
+            LanguageOption(
+                label = stringResource(R.string.settings_language_portuguese),
+                language = AppLanguage.PORTUGUESE,
+                selected = selected,
+                onSelected = onSelected,
+            )
+            LanguageOption(
+                label = stringResource(R.string.settings_language_dutch),
+                language = AppLanguage.DUTCH,
+                selected = selected,
+                onSelected = onSelected,
+            )
         }
     }
 }

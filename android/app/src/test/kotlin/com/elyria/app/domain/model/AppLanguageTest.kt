@@ -36,7 +36,37 @@ class AppLanguageTest {
     }
 
     @Test
+    fun fromCode_es_returnsSpanish() {
+        assertEquals(AppLanguage.SPANISH, AppLanguage.fromCode("es"))
+    }
+
+    @Test
+    fun fromCode_de_returnsGerman() {
+        assertEquals(AppLanguage.GERMAN, AppLanguage.fromCode("de"))
+    }
+
+    @Test
+    fun fromCode_fr_returnsFrench() {
+        assertEquals(AppLanguage.FRENCH, AppLanguage.fromCode("fr"))
+    }
+
+    @Test
+    fun fromCode_ptBR_returnsPortugueseBr() {
+        assertEquals(AppLanguage.PORTUGUESE_BR, AppLanguage.fromCode("pt-BR"))
+    }
+
+    @Test
+    fun fromCode_pt_returnsPortuguese() {
+        assertEquals(AppLanguage.PORTUGUESE, AppLanguage.fromCode("pt"))
+    }
+
+    @Test
+    fun fromCode_nl_returnsDutch() {
+        assertEquals(AppLanguage.DUTCH, AppLanguage.fromCode("nl"))
+    }
+
+    @Test
     fun fromCode_unknown_returnsSystem() {
-        assertEquals(AppLanguage.SYSTEM, AppLanguage.fromCode("fr"))
+        assertEquals(AppLanguage.SYSTEM, AppLanguage.fromCode("xx"))
     }
 }
