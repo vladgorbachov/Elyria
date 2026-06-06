@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  DRAFT TRANSLATIONS — Step 6.M-C (2026-06-06)
+  39 keys updated in this step (Romanian). Native speaker review required
+  before release.
+
+  Updated groups:
+    mood_log_title, mood_log_emotions_title, mood_log_triggers_title,
+    mood_log_note_label, mood_log_tags_hint;
+    emotion_sad, emotion_anxious, emotion_angry, emotion_tired, emotion_lonely,
+    emotion_overwhelmed, emotion_calm, emotion_hopeful, emotion_grateful,
+    emotion_proud, emotion_peaceful, emotion_motivated;
+    trigger_work, trigger_study, trigger_family, trigger_relationships,
+    trigger_health, trigger_sleep, trigger_money, trigger_weather,
+    trigger_social_media, trigger_food, trigger_exercise, trigger_unknown;
+    insights_patterns_title, insights_patterns_empty, insights_top_emotions,
+    insights_top_triggers, insights_low_mood_triggers, insights_daily_mood;
+    home_garden_title, home_garden_body, home_quick_mood, home_log_mood.
+
+  All other strings in this file were translated earlier and are not part of
+  this step.
+-->
 <resources>
     <string name="app_name">Elyria</string>
     <string name="disclaimer_short">Elyria nu înlocuiește terapia profesională sau îngrijirea medicală.</string>
@@ -50,45 +71,45 @@
     <string name="settings_safety">Siguranță</string>
     <string name="settings_privacy_note">Datele rămân pe dispozitiv până le exporți. Elyria nu încarcă înregistrările.</string>
     <string name="settings_crisis_placeholder">Resurse de criză — în curând</string>
-    <string name="mood_log_title">Log your mood</string>
-    <string name="mood_log_emotions_title">What feels closest?</string>
-    <string name="mood_log_triggers_title">What may have influenced this?</string>
-    <string name="mood_log_note_label">Optional note</string>
-    <string name="mood_log_tags_hint">Optional — choose up to 3</string>
-    <string name="emotion_sad">Sad</string>
-    <string name="emotion_anxious">Anxious</string>
-    <string name="emotion_angry">Angry</string>
-    <string name="emotion_tired">Tired</string>
-    <string name="emotion_lonely">Lonely</string>
-    <string name="emotion_overwhelmed">Overwhelmed</string>
+    <string name="mood_log_title">Înregistrează-ți starea</string>
+    <string name="mood_log_emotions_title">Ce simți cel mai aproape?</string>
+    <string name="mood_log_triggers_title">Ce ar fi putut influența asta?</string>
+    <string name="mood_log_note_label">Notă (opțional)</string>
+    <string name="mood_log_tags_hint">Opțional — alege până la 3</string>
+    <string name="emotion_sad">Trist</string>
+    <string name="emotion_anxious">Anxios</string>
+    <string name="emotion_angry">Furios</string>
+    <string name="emotion_tired">Obosit</string>
+    <string name="emotion_lonely">Singur</string>
+    <string name="emotion_overwhelmed">Copleșit</string>
     <string name="emotion_calm">Calm</string>
-    <string name="emotion_hopeful">Hopeful</string>
-    <string name="emotion_grateful">Grateful</string>
-    <string name="emotion_proud">Proud</string>
-    <string name="emotion_peaceful">Peaceful</string>
-    <string name="emotion_motivated">Motivated</string>
-    <string name="trigger_work">Work</string>
-    <string name="trigger_study">Study</string>
-    <string name="trigger_family">Family</string>
-    <string name="trigger_relationships">Relationships</string>
-    <string name="trigger_health">Health</string>
-    <string name="trigger_sleep">Sleep</string>
-    <string name="trigger_money">Money</string>
-    <string name="trigger_weather">Weather</string>
-    <string name="trigger_social_media">Social media</string>
-    <string name="trigger_food">Food</string>
-    <string name="trigger_exercise">Exercise</string>
-    <string name="trigger_unknown">Other</string>
-    <string name="insights_patterns_title">Patterns</string>
-    <string name="insights_patterns_empty">Add check-ins with emotions or triggers to see gentle patterns here.</string>
-    <string name="insights_top_emotions">Often noticed emotions</string>
-    <string name="insights_top_triggers">May be linked with your mood</string>
-    <string name="insights_low_mood_triggers">Often appears on lower days</string>
-    <string name="insights_daily_mood">Daily mood</string>
-    <string name="home_garden_title">Inner Garden</string>
-    <string name="home_garden_body">Your garden grows with gentle check-ins.</string>
-    <string name="home_quick_mood">Quick mood check</string>
-    <string name="home_log_mood">Log mood</string>
+    <string name="emotion_hopeful">Plin de speranță</string>
+    <string name="emotion_grateful">Recunoscător</string>
+    <string name="emotion_proud">Mândru</string>
+    <string name="emotion_peaceful">Liniștit</string>
+    <string name="emotion_motivated">Motivat</string>
+    <string name="trigger_work">Muncă</string>
+    <string name="trigger_study">Studiu</string>
+    <string name="trigger_family">Familie</string>
+    <string name="trigger_relationships">Relații</string>
+    <string name="trigger_health">Sănătate</string>
+    <string name="trigger_sleep">Somn</string>
+    <string name="trigger_money">Bani</string>
+    <string name="trigger_weather">Vreme</string>
+    <string name="trigger_social_media">Rețele sociale</string>
+    <string name="trigger_food">Mâncare</string>
+    <string name="trigger_exercise">Mișcare</string>
+    <string name="trigger_unknown">Altele</string>
+    <string name="insights_patterns_title">Tipare</string>
+    <string name="insights_patterns_empty">Adaugă check-in-uri cu emoții sau declanșatori pentru a vedea tipare blânde aici.</string>
+    <string name="insights_top_emotions">Emoții observate des</string>
+    <string name="insights_top_triggers">Pot fi legate de starea ta</string>
+    <string name="insights_low_mood_triggers">Apar des în zilele mai grele</string>
+    <string name="insights_daily_mood">Stare zilnică</string>
+    <string name="home_garden_title">Grădina interioară</string>
+    <string name="home_garden_body">Grădina ta crește cu check-in-uri blânde.</string>
+    <string name="home_quick_mood">Check-in rapid</string>
+    <string name="home_log_mood">Înregistrează starea</string>
     <string name="home_greeting">Bine ai revenit</string>
     <string name="home_greeting_with_mood">Bine ai revenit — ultima stare: %1$s</string>
     <string name="home_day_streak">Serie: %1$d zile</string>

@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  DRAFT TRANSLATIONS — Step 6.M-C (2026-06-06)
+  39 keys updated in this step (Ukrainian). Native speaker review required
+  before release.
+
+  Updated groups:
+    mood_log_title, mood_log_emotions_title, mood_log_triggers_title,
+    mood_log_note_label, mood_log_tags_hint;
+    emotion_sad, emotion_anxious, emotion_angry, emotion_tired, emotion_lonely,
+    emotion_overwhelmed, emotion_calm, emotion_hopeful, emotion_grateful,
+    emotion_proud, emotion_peaceful, emotion_motivated;
+    trigger_work, trigger_study, trigger_family, trigger_relationships,
+    trigger_health, trigger_sleep, trigger_money, trigger_weather,
+    trigger_social_media, trigger_food, trigger_exercise, trigger_unknown;
+    insights_patterns_title, insights_patterns_empty, insights_top_emotions,
+    insights_top_triggers, insights_low_mood_triggers, insights_daily_mood;
+    home_garden_title, home_garden_body, home_quick_mood, home_log_mood.
+
+  All other strings in this file were translated earlier and are not part of
+  this step.
+-->
 <resources>
     <string name="app_name">Elyria</string>
     <string name="disclaimer_short">Elyria не замінює професійну терапію чи медичну допомогу.</string>
@@ -50,45 +71,45 @@
     <string name="settings_safety">Безпека</string>
     <string name="settings_privacy_note">Дані залишаються на пристрої, доки ви їх не експортуєте. Elyria не завантажує записи.</string>
     <string name="settings_crisis_placeholder">Кризові ресурси — незабаром</string>
-    <string name="mood_log_title">Log your mood</string>
-    <string name="mood_log_emotions_title">What feels closest?</string>
-    <string name="mood_log_triggers_title">What may have influenced this?</string>
-    <string name="mood_log_note_label">Optional note</string>
-    <string name="mood_log_tags_hint">Optional — choose up to 3</string>
-    <string name="emotion_sad">Sad</string>
-    <string name="emotion_anxious">Anxious</string>
-    <string name="emotion_angry">Angry</string>
-    <string name="emotion_tired">Tired</string>
-    <string name="emotion_lonely">Lonely</string>
-    <string name="emotion_overwhelmed">Overwhelmed</string>
-    <string name="emotion_calm">Calm</string>
-    <string name="emotion_hopeful">Hopeful</string>
-    <string name="emotion_grateful">Grateful</string>
-    <string name="emotion_proud">Proud</string>
-    <string name="emotion_peaceful">Peaceful</string>
-    <string name="emotion_motivated">Motivated</string>
-    <string name="trigger_work">Work</string>
-    <string name="trigger_study">Study</string>
-    <string name="trigger_family">Family</string>
-    <string name="trigger_relationships">Relationships</string>
-    <string name="trigger_health">Health</string>
-    <string name="trigger_sleep">Sleep</string>
-    <string name="trigger_money">Money</string>
-    <string name="trigger_weather">Weather</string>
-    <string name="trigger_social_media">Social media</string>
-    <string name="trigger_food">Food</string>
-    <string name="trigger_exercise">Exercise</string>
-    <string name="trigger_unknown">Other</string>
-    <string name="insights_patterns_title">Patterns</string>
-    <string name="insights_patterns_empty">Add check-ins with emotions or triggers to see gentle patterns here.</string>
-    <string name="insights_top_emotions">Often noticed emotions</string>
-    <string name="insights_top_triggers">May be linked with your mood</string>
-    <string name="insights_low_mood_triggers">Often appears on lower days</string>
-    <string name="insights_daily_mood">Daily mood</string>
-    <string name="home_garden_title">Inner Garden</string>
-    <string name="home_garden_body">Your garden grows with gentle check-ins.</string>
-    <string name="home_quick_mood">Quick mood check</string>
-    <string name="home_log_mood">Log mood</string>
+    <string name="mood_log_title">Запис настрою</string>
+    <string name="mood_log_emotions_title">Що відчуваєте найближче?</string>
+    <string name="mood_log_triggers_title">Що могло на це вплинути?</string>
+    <string name="mood_log_note_label">Нотатка (необов\'язково)</string>
+    <string name="mood_log_tags_hint">Необов\'язково — до 3 варіантів</string>
+    <string name="emotion_sad">Сум</string>
+    <string name="emotion_anxious">Тривога</string>
+    <string name="emotion_angry">Злість</string>
+    <string name="emotion_tired">Втома</string>
+    <string name="emotion_lonely">Самотність</string>
+    <string name="emotion_overwhelmed">Перевантаження</string>
+    <string name="emotion_calm">Спокій</string>
+    <string name="emotion_hopeful">Надія</string>
+    <string name="emotion_grateful">Вдячність</string>
+    <string name="emotion_proud">Гордість</string>
+    <string name="emotion_peaceful">Умиротворення</string>
+    <string name="emotion_motivated">Мотивація</string>
+    <string name="trigger_work">Робота</string>
+    <string name="trigger_study">Навчання</string>
+    <string name="trigger_family">Родина</string>
+    <string name="trigger_relationships">Стосунки</string>
+    <string name="trigger_health">Здоров\'я</string>
+    <string name="trigger_sleep">Сон</string>
+    <string name="trigger_money">Гроші</string>
+    <string name="trigger_weather">Погода</string>
+    <string name="trigger_social_media">Соцмережі</string>
+    <string name="trigger_food">Їжа</string>
+    <string name="trigger_exercise">Рух</string>
+    <string name="trigger_unknown">Інше</string>
+    <string name="insights_patterns_title">Патерни</string>
+    <string name="insights_patterns_empty">Додайте записи з емоціями або тригерами, щоб побачити м\'які патерни.</string>
+    <string name="insights_top_emotions">Часто помічені емоції</string>
+    <string name="insights_top_triggers">Може бути пов\'язано з вашим настроєм</string>
+    <string name="insights_low_mood_triggers">Часто з\'являється у важчі дні</string>
+    <string name="insights_daily_mood">Настрій по днях</string>
+    <string name="home_garden_title">Внутрішній сад</string>
+    <string name="home_garden_body">Ваш сад росте з м\'якими check-in.</string>
+    <string name="home_quick_mood">Швидкий check-in</string>
+    <string name="home_log_mood">Записати настрій</string>
     <string name="home_greeting">З поверненням</string>
     <string name="home_greeting_with_mood">З поверненням — останній настрій: %1$s</string>
     <string name="home_day_streak">Серія: %1$d дн.</string>
