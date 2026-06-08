@@ -1,50 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  DRAFT TRANSLATIONS — Step 6.M-A.2 (2026-06-06)
-  Spanish (es) UI translations, machine-drafted by Claude.
-  ALL 135 keys in this file are DRAFT and require native speaker review
-  before release.
+  REVIEWED TRANSLATIONS — Step 6.M-A.2-R (2026-06-06)
+  Spanish (es) UI translations. Originally machine-drafted in Step
+  6.M-A.2 (commit 66ba309) and then reviewed by native Spanish
+  speaker (Diego).
 
-  Critical strings (safety / medical disclaimer / user prompt) require
-  professional translation, not just casual review:
-    disclaimer_short
-    companion_disclaimer
-    mood_select_required
+  Project-owner adjustments to Diego's review:
+   - mood_save_failed: restored multi-line "\nInténtalo de nuevo." to
+     match the multi-line pattern of EN/RU/UK/RO and preserve the
+     retry-hint UX. Diego's reviewed value covered only the first
+     sentence.
+   - home_greeting and home_greeting_with_mood: used gender-neutral
+     "Hola otra vez" instead of Diego's "Bienvenido de nuevo". Diego
+     himself flagged the gender issue in his Notes and suggested this
+     alternative. A future post-MVP step will introduce profile-aware
+     adaptive copy (gender, age tier).
 
-  Base tone: informal T-form (tú), wellbeing register, gender-neutral
-  where possible (nouns for emotions: Tristeza/Ansiedad/Calma,
-  not adjectives Triste/Ansioso/Calmo).
+  Style notes (Diego's decisions, accepted as-is):
+   - Mood is rendered as "estado" everywhere, not "ánimo".
+   - Companion is "Compañero Elyria", not "Acompañante Elyria".
+   - Emotions use adjective form (Triste, Ansioso, Cansado, Solo,
+     Abrumado, Tranquilo, Esperanzado, Agradecido, Orgulloso, En paz,
+     Motivado, Enfadado). This differs from RU/UK/RO (which use
+     nouns) but is the convention Diego recommends for Spanish
+     wellbeing apps. Adjectives are in masculine form by default
+     and will be addressed by the future profile-aware copy step.
+   - Spain-leaning vocabulary in a few places: Enfadado (vs Enojado),
+     Media (vs Promedio), Empezar (vs Comenzar), Finalizar práctica
+     (vs Terminar práctica). Acceptable across both Spain and Latin
+     America per Diego.
+   - "check-in" and "mindfulness" kept as English loanwords (Spanish
+     wellbeing-app convention).
+   - Tone: informal T-form (tú), soft, non-imperative where possible.
 
-  See companion review document: Step_6MA2_Spanish_Review.md
+  No DRAFT markers remain. This file is release-ready for Spanish.
 -->
 <resources>
     <string name="app_name">Elyria</string>
     <string name="disclaimer_short">Elyria no sustituye la terapia profesional ni la atención médica.</string>
     <string name="nav_home">Inicio</string>
-    <string name="nav_mood">Ánimo</string>
+    <string name="nav_mood">Estado</string>
     <string name="nav_practices">Prácticas</string>
     <string name="nav_insights">Análisis</string>
     <string name="nav_settings">Más</string>
-    <string name="mood_save">Guardar ánimo</string>
-    <string name="mood_saved">Ánimo guardado</string>
-    <string name="mood_select_required">Selecciona un ánimo para continuar</string>
+    <string name="mood_save">Guardar</string>
+    <string name="mood_saved">Estado guardado</string>
+    <string name="mood_select_required">Selecciona un estado para continuar</string>
     <string name="insights_period_week">Semana</string>
     <string name="insights_period_month">Mes</string>
     <string name="elyria_reflection_title">Reflexión de Elyria</string>
     <string name="elyria_reflection_loading">Preparando una reflexión suave…</string>
-    <string name="elyria_reflection_empty">Añade algunos registros de ánimo para desbloquear una reflexión personal.</string>
-    <string name="elyria_reflection_error">La reflexión no está disponible ahora, pero tus análisis siguen guardados en este dispositivo.</string>
-    <string name="companion_title">Acompañante Elyria</string>
-    <string name="companion_disclaimer">Elyria no reemplaza la atención profesional.</string>
+    <string name="elyria_reflection_empty">Añade algunos registros de estado para desbloquear una reflexión personal.</string>
+    <string name="elyria_reflection_error">La reflexión no está disponible ahora, pero tus datos siguen guardados en este dispositivo.</string>
+    <string name="companion_title">Compañero Elyria</string>
+    <string name="companion_disclaimer">Elyria no sustituye la atención profesional.</string>
     <string name="companion_input_placeholder">Escribe lo que tienes en mente…</string>
     <string name="companion_send">Enviar</string>
     <string name="companion_reflecting">Elyria está reflexionando…</string>
-    <string name="companion_welcome">Hola, estoy aquí para un suave momento de reflexión. ¿Sobre qué te gustaría reflexionar?</string>
-    <string name="companion_empty_message">Escribe unas palabras antes de enviar.</string>
+    <string name="companion_welcome">Hola, estoy aquí para un check-in suave. ¿Sobre qué te gustaría reflexionar?</string>
+    <string name="companion_empty_message">Escribe algunas palabras antes de enviar.</string>
     <string name="companion_error">La reflexión no está disponible ahora.</string>
     <string name="home_companion_title">Habla con Elyria</string>
-    <string name="home_companion_body">Comparte unas palabras y recibe una reflexión suave en el dispositivo.</string>
-    <string name="home_companion_action">Abrir acompañante</string>
+    <string name="home_companion_body">Comparte algunas palabras y recibe una reflexión suave en el dispositivo.</string>
+    <string name="home_companion_action">Abrir compañero</string>
     <string name="insights_ask_companion">Pregunta a Elyria sobre esto</string>
     <string name="settings_title">Ajustes</string>
     <string name="settings_appearance">Apariencia</string>
@@ -56,37 +74,37 @@
     <string name="settings_export_data">Exportar datos</string>
     <string name="settings_delete_all_data">Eliminar todos los datos</string>
     <string name="settings_delete_confirm_title">¿Eliminar todos los datos?</string>
-    <string name="settings_delete_confirm_body">Esto eliminará los registros de ánimo y diario guardados en este dispositivo. Esta acción no se puede deshacer.</string>
+    <string name="settings_delete_confirm_body">Se eliminarán los registros de estado y diario guardados en este dispositivo. Esto no se puede deshacer.</string>
     <string name="settings_delete_confirm_action">Eliminar</string>
     <string name="settings_delete_cancel">Cancelar</string>
     <string name="settings_export_success">Exportación guardada correctamente.</string>
     <string name="settings_export_failure">La exportación falló. Inténtalo de nuevo.</string>
-    <string name="settings_export_no_data">Aún no hay datos de ánimo o diario para exportar.</string>
-    <string name="settings_delete_success">Todos los datos de ánimo y diario se eliminaron de este dispositivo.</string>
+    <string name="settings_export_no_data">Aún no hay datos de estado o diario para exportar.</string>
+    <string name="settings_delete_success">Todos los datos de estado y diario fueron eliminados de este dispositivo.</string>
     <string name="settings_delete_failure">No se pudieron eliminar los datos. Inténtalo de nuevo.</string>
     <string name="settings_theme_failure">No se pudo actualizar el tema. Inténtalo de nuevo.</string>
     <string name="settings_safety">Seguridad</string>
-    <string name="settings_privacy_note">Tus datos de ánimo y diario permanecen en este dispositivo a menos que los exportes. Elyria no sube tus registros.</string>
+    <string name="settings_privacy_note">Tus datos de estado y diario permanecen en este dispositivo a menos que los exportes. Elyria no sube tus registros.</string>
     <string name="settings_crisis_placeholder">Recursos de crisis — próximamente</string>
-    <string name="mood_log_title">Registra tu ánimo</string>
+    <string name="mood_log_title">Registra tu estado</string>
     <string name="mood_log_emotions_title">¿Qué se siente más cercano?</string>
     <string name="mood_log_triggers_title">¿Qué pudo haber influido?</string>
-    <string name="mood_log_note_label">Nota (opcional)</string>
+    <string name="mood_log_note_label">Nota opcional</string>
     <string name="mood_log_tags_hint">Opcional — elige hasta 3</string>
-    <string name="emotion_sad">Tristeza</string>
-    <string name="emotion_anxious">Ansiedad</string>
-    <string name="emotion_angry">Enojo</string>
-    <string name="emotion_tired">Cansancio</string>
-    <string name="emotion_lonely">Soledad</string>
-    <string name="emotion_overwhelmed">Agobio</string>
-    <string name="emotion_calm">Calma</string>
-    <string name="emotion_hopeful">Esperanza</string>
-    <string name="emotion_grateful">Gratitud</string>
-    <string name="emotion_proud">Orgullo</string>
-    <string name="emotion_peaceful">Paz</string>
-    <string name="emotion_motivated">Motivación</string>
+    <string name="emotion_sad">Triste</string>
+    <string name="emotion_anxious">Ansioso</string>
+    <string name="emotion_angry">Enfadado</string>
+    <string name="emotion_tired">Cansado</string>
+    <string name="emotion_lonely">Solo</string>
+    <string name="emotion_overwhelmed">Abrumado</string>
+    <string name="emotion_calm">Tranquilo</string>
+    <string name="emotion_hopeful">Esperanzado</string>
+    <string name="emotion_grateful">Agradecido</string>
+    <string name="emotion_proud">Orgulloso</string>
+    <string name="emotion_peaceful">En paz</string>
+    <string name="emotion_motivated">Motivado</string>
     <string name="trigger_work">Trabajo</string>
-    <string name="trigger_study">Estudios</string>
+    <string name="trigger_study">Estudio</string>
     <string name="trigger_family">Familia</string>
     <string name="trigger_relationships">Relaciones</string>
     <string name="trigger_health">Salud</string>
@@ -95,39 +113,39 @@
     <string name="trigger_weather">Clima</string>
     <string name="trigger_social_media">Redes sociales</string>
     <string name="trigger_food">Comida</string>
-    <string name="trigger_exercise">Ejercicio</string>
+    <string name="trigger_exercise">Movimiento</string>
     <string name="trigger_unknown">Otro</string>
     <string name="insights_patterns_title">Patrones</string>
     <string name="insights_patterns_empty">Añade registros con emociones o desencadenantes para ver patrones suaves aquí.</string>
-    <string name="insights_top_emotions">Emociones notadas con frecuencia</string>
-    <string name="insights_top_triggers">Pueden estar relacionados con tu ánimo</string>
-    <string name="insights_low_mood_triggers">Aparecen a menudo en días más bajos</string>
-    <string name="insights_daily_mood">Ánimo diario</string>
+    <string name="insights_top_emotions">Emociones notadas a menudo</string>
+    <string name="insights_top_triggers">Puede estar ligado a tu estado</string>
+    <string name="insights_low_mood_triggers">Aparece a menudo en días más bajos</string>
+    <string name="insights_daily_mood">Estado diario</string>
     <string name="home_garden_title">Jardín interior</string>
-    <string name="home_garden_body">Tu jardín crece con registros suaves.</string>
-    <string name="home_quick_mood">Registro rápido</string>
-    <string name="home_log_mood">Registrar ánimo</string>
-    <string name="home_greeting">Hola de nuevo</string>
-    <string name="home_greeting_with_mood">Hola de nuevo — último ánimo: %1$s</string>
+    <string name="home_garden_body">Tu jardín crece con check-ins suaves.</string>
+    <string name="home_quick_mood">Check-in rápido</string>
+    <string name="home_log_mood">Registrar estado</string>
+    <string name="home_greeting">Hola otra vez</string>
+    <string name="home_greeting_with_mood">Hola otra vez — último estado: %1$s</string>
     <string name="home_day_streak">Racha de %1$d días</string>
-    <string name="home_day_streak_label">días seguidos</string>
+    <string name="home_day_streak_label">días de racha</string>
     <string name="home_best_streak">Mejor: %1$d días</string>
     <string name="home_suggested_practice">Práctica sugerida</string>
     <string name="insights_title">Análisis</string>
-    <string name="insights_average">Promedio: %1$s / 5 · %2$s</string>
+    <string name="insights_average">Media: %1$s / 5 · %2$s</string>
     <string name="insights_most_frequent">Más frecuente: %1$s</string>
     <string name="insights_trend_up">en aumento</string>
     <string name="insights_trend_down">en descenso</string>
     <string name="insights_trend_stable">estable</string>
-    <string name="insights_companion_prefill">¿Puedes ayudarme a entender este patrón de ánimo?</string>
+    <string name="insights_companion_prefill">¿Puedes ayudarme a entender este patrón de estado?</string>
     <string name="mood_level_very_low">Muy bajo</string>
     <string name="mood_level_low">Bajo</string>
     <string name="mood_level_neutral">Neutral</string>
     <string name="mood_level_good">Bueno</string>
     <string name="mood_level_great">Excelente</string>
     <string name="mood_log_note_counter">%1$d/200</string>
-    <string name="mood_save_failed">No se pudo guardar tu ánimo.\nInténtalo de nuevo.</string>
-    <string name="companion_response_fallback">Tengo dificultades para responder ahora, pero tus datos permanecen privados en este dispositivo.</string>
+    <string name="mood_save_failed">No se pudo guardar tu estado.\nInténtalo de nuevo.</string>
+    <string name="companion_response_fallback">Tengo dificultades para responder ahora, pero tus datos de estado permanecen privados en este dispositivo.</string>
     <string name="settings_language_title">Idioma</string>
     <string name="settings_language_system">Sistema</string>
     <string name="settings_language_english">English</string>
@@ -136,15 +154,15 @@
     <string name="settings_language_romanian">Română</string>
     <string name="settings_language_failure">No se pudo actualizar el idioma. Inténtalo de nuevo.</string>
     <string name="a11y_back">Atrás</string>
-    <string name="onboarding_tagline">Un espacio tranquilo para registrar el ánimo, practicar mindfulness y reflexionar — de forma privada en tu dispositivo.</string>
-    <string name="onboarding_get_started">Comenzar</string>
+    <string name="onboarding_tagline">Un espacio tranquilo para registrar tu estado, practicar mindfulness y reflexionar — de forma privada en tu dispositivo.</string>
+    <string name="onboarding_get_started">Empezar</string>
     <string name="onboarding_starting">Iniciando…</string>
     <string name="practices_title">Prácticas</string>
     <string name="practice_start">Iniciar</string>
-    <string name="practice_finish">Terminar práctica</string>
-    <string name="practice_pause">Pausa</string>
+    <string name="practice_finish">Finalizar práctica</string>
+    <string name="practice_pause">Pausar</string>
     <string name="practice_reset">Reiniciar</string>
-    <string name="practice_great_job">¡Excelente!</string>
+    <string name="practice_great_job">¡Buen trabajo!</string>
     <string name="practice_minutes">%1$d min</string>
     <string name="practice_card_a11y">%1$s, %2$d min</string>
     <string name="settings_language_spanish">Español</string>
