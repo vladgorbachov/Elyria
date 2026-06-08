@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DRAFT TRANSLATIONS — Step 6.M-A.4 (2026-06-07)
+  French (fr) UI translations, machine-drafted by Claude.
+  ALL 135 keys in this file are DRAFT and require native speaker review
+  before release.
+
+  Critical strings (safety / medical disclaimer / user prompt) require
+  professional translation, not just casual review:
+    disclaimer_short
+    companion_disclaimer
+    mood_select_required
+    settings_privacy_note
+    companion_response_fallback
+
+  Base tone: informal tu-form, wellbeing register, gender-neutral
+  where possible (nouns for emotions to avoid m/f endings:
+  Tristesse, Anxiété, Colère, Fatigue, Solitude, Surcharge, Calme,
+  Espoir, Gratitude, Fierté, Paix, Motivation).
+
+  Translation choices to flag for native reviewer:
+   - "humeur" used for "mood" everywhere. Alternatives: "état
+     d'esprit", "état émotionnel".
+   - "pleine conscience" used for "mindfulness" (French native term).
+     Alternative: keep English "mindfulness" as loanword.
+   - "check-in" kept as English loanword. Alternatives:
+     "enregistrement", "moment".
+   - "Compagnon" used for "Companion" (masc form, French default for
+     gender-neutral nouns).
+   - Emotions translated as NOUNS to avoid m/f gender endings on
+     adjectives (would force tu user into one gender). Spanish chose
+     adjectives (masc default) and German chose adjectives in
+     gender-neutral predicate form, but French adjectives always
+     carry gender, so nouns are safer here.
+   - "Bon retour" used for greeting — gender-neutral and warm.
+     Alternative: "Te revoilà", "Heureux de te revoir" (gendered).
+   - French typography spaces before ?, !, : are preserved as regular
+     ASCII spaces. Native reviewer may want non-breaking spaces
+     (U+00A0) for proper typography in a future revision.
+
+  Apostrophe escaping: every ASCII apostrophe is escaped as \' as
+  required by Android XML resources. The file contains ~25 such
+  escapes (e.g. l\'humeur, d\'Elyria, n\'est, qu\'est-ce).
+
+  See companion review document: Step_6MA4_French_Review.md
+-->
+<resources>
+    <string name="app_name">Elyria</string>
+    <string name="disclaimer_short">Elyria ne remplace pas une thérapie professionnelle ou des soins médicaux.</string>
+    <string name="nav_home">Accueil</string>
+    <string name="nav_mood">Humeur</string>
+    <string name="nav_practices">Pratiques</string>
+    <string name="nav_insights">Analyses</string>
+    <string name="nav_settings">Plus</string>
+    <string name="mood_save">Enregistrer l\'humeur</string>
+    <string name="mood_saved">Humeur enregistrée</string>
+    <string name="mood_select_required">Sélectionne une humeur pour continuer</string>
+    <string name="insights_period_week">Semaine</string>
+    <string name="insights_period_month">Mois</string>
+    <string name="elyria_reflection_title">Réflexion d\'Elyria</string>
+    <string name="elyria_reflection_loading">Une réflexion douce se prépare…</string>
+    <string name="elyria_reflection_empty">Ajoute quelques enregistrements d\'humeur pour débloquer une réflexion personnelle.</string>
+    <string name="elyria_reflection_error">La réflexion n\'est pas disponible actuellement, mais tes analyses restent enregistrées sur cet appareil.</string>
+    <string name="companion_title">Compagnon Elyria</string>
+    <string name="companion_disclaimer">Elyria ne remplace pas un accompagnement professionnel.</string>
+    <string name="companion_input_placeholder">Écris ce qui te préoccupe…</string>
+    <string name="companion_send">Envoyer</string>
+    <string name="companion_reflecting">Elyria réfléchit…</string>
+    <string name="companion_welcome">Bonjour, je suis là pour un check-in tout en douceur. De quoi aimerais-tu parler ?</string>
+    <string name="companion_empty_message">Écris quelques mots avant d\'envoyer.</string>
+    <string name="companion_error">La réflexion n\'est pas disponible actuellement.</string>
+    <string name="home_companion_title">Parler à Elyria</string>
+    <string name="home_companion_body">Partage quelques mots et reçois une réflexion douce sur ton appareil.</string>
+    <string name="home_companion_action">Ouvrir le compagnon</string>
+    <string name="insights_ask_companion">Demander à Elyria</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_appearance">Apparence</string>
+    <string name="settings_theme">Thème</string>
+    <string name="settings_theme_system">Système</string>
+    <string name="settings_theme_light">Clair</string>
+    <string name="settings_theme_dark">Sombre</string>
+    <string name="settings_data">Données</string>
+    <string name="settings_export_data">Exporter les données</string>
+    <string name="settings_delete_all_data">Supprimer toutes les données</string>
+    <string name="settings_delete_confirm_title">Supprimer toutes les données ?</string>
+    <string name="settings_delete_confirm_body">Les enregistrements d\'humeur et de journal stockés sur cet appareil seront supprimés. Cette action est irréversible.</string>
+    <string name="settings_delete_confirm_action">Supprimer</string>
+    <string name="settings_delete_cancel">Annuler</string>
+    <string name="settings_export_success">Export enregistré avec succès.</string>
+    <string name="settings_export_failure">L\'export a échoué. Réessaie.</string>
+    <string name="settings_export_no_data">Pas encore de données d\'humeur ou de journal à exporter.</string>
+    <string name="settings_delete_success">Toutes les données d\'humeur et de journal ont été supprimées de cet appareil.</string>
+    <string name="settings_delete_failure">Impossible de supprimer les données. Réessaie.</string>
+    <string name="settings_theme_failure">Impossible de mettre à jour le thème. Réessaie.</string>
+    <string name="settings_safety">Sécurité</string>
+    <string name="settings_privacy_note">Tes données d\'humeur et de journal restent sur cet appareil sauf si tu les exportes. Elyria n\'envoie pas tes entrées.</string>
+    <string name="settings_crisis_placeholder">Ressources en cas de crise — bientôt disponible</string>
+    <string name="mood_log_title">Enregistre ton humeur</string>
+    <string name="mood_log_emotions_title">Qu\'est-ce qui correspond le mieux ?</string>
+    <string name="mood_log_triggers_title">Qu\'est-ce qui a pu y contribuer ?</string>
+    <string name="mood_log_note_label">Note (optionnel)</string>
+    <string name="mood_log_tags_hint">Optionnel — choisis jusqu\'à 3</string>
+    <string name="emotion_sad">Tristesse</string>
+    <string name="emotion_anxious">Anxiété</string>
+    <string name="emotion_angry">Colère</string>
+    <string name="emotion_tired">Fatigue</string>
+    <string name="emotion_lonely">Solitude</string>
+    <string name="emotion_overwhelmed">Surcharge</string>
+    <string name="emotion_calm">Calme</string>
+    <string name="emotion_hopeful">Espoir</string>
+    <string name="emotion_grateful">Gratitude</string>
+    <string name="emotion_proud">Fierté</string>
+    <string name="emotion_peaceful">Paix</string>
+    <string name="emotion_motivated">Motivation</string>
+    <string name="trigger_work">Travail</string>
+    <string name="trigger_study">Études</string>
+    <string name="trigger_family">Famille</string>
+    <string name="trigger_relationships">Relations</string>
+    <string name="trigger_health">Santé</string>
+    <string name="trigger_sleep">Sommeil</string>
+    <string name="trigger_money">Argent</string>
+    <string name="trigger_weather">Météo</string>
+    <string name="trigger_social_media">Réseaux sociaux</string>
+    <string name="trigger_food">Alimentation</string>
+    <string name="trigger_exercise">Mouvement</string>
+    <string name="trigger_unknown">Autre</string>
+    <string name="insights_patterns_title">Schémas</string>
+    <string name="insights_patterns_empty">Ajoute des enregistrements avec émotions ou déclencheurs pour voir des schémas doux ici.</string>
+    <string name="insights_top_emotions">Émotions souvent remarquées</string>
+    <string name="insights_top_triggers">Peuvent être liés à ton humeur</string>
+    <string name="insights_low_mood_triggers">Apparaissent souvent les jours plus bas</string>
+    <string name="insights_daily_mood">Humeur quotidienne</string>
+    <string name="home_garden_title">Jardin intérieur</string>
+    <string name="home_garden_body">Ton jardin grandit avec des check-ins doux.</string>
+    <string name="home_quick_mood">Check-in rapide</string>
+    <string name="home_log_mood">Enregistrer l\'humeur</string>
+    <string name="home_greeting">Bon retour</string>
+    <string name="home_greeting_with_mood">Bon retour — dernière humeur : %1$s</string>
+    <string name="home_day_streak">%1$d jours d\'affilée</string>
+    <string name="home_day_streak_label">jours d\'affilée</string>
+    <string name="home_best_streak">Record : %1$d jours</string>
+    <string name="home_suggested_practice">Pratique suggérée</string>
+    <string name="insights_title">Analyses</string>
+    <string name="insights_average">Moyenne : %1$s / 5 · %2$s</string>
+    <string name="insights_most_frequent">Le plus fréquent : %1$s</string>
+    <string name="insights_trend_up">en hausse</string>
+    <string name="insights_trend_down">en baisse</string>
+    <string name="insights_trend_stable">stable</string>
+    <string name="insights_companion_prefill">Peux-tu m\'aider à comprendre ce schéma d\'humeur ?</string>
+    <string name="mood_level_very_low">Très bas</string>
+    <string name="mood_level_low">Bas</string>
+    <string name="mood_level_neutral">Neutre</string>
+    <string name="mood_level_good">Bon</string>
+    <string name="mood_level_great">Excellent</string>
+    <string name="mood_log_note_counter">%1$d/200</string>
+    <string name="mood_save_failed">Impossible d\'enregistrer ton humeur.\nRéessaie.</string>
+    <string name="companion_response_fallback">J\'ai du mal à répondre maintenant, mais tes données d\'humeur restent privées sur cet appareil.</string>
+    <string name="settings_language_title">Langue</string>
+    <string name="settings_language_system">Système</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_russian">Русский</string>
+    <string name="settings_language_ukrainian">Українська</string>
+    <string name="settings_language_romanian">Română</string>
+    <string name="settings_language_failure">Impossible de mettre à jour la langue. Réessaie.</string>
+    <string name="a11y_back">Retour</string>
+    <string name="onboarding_tagline">Un espace calme pour suivre ton humeur, pratiquer la pleine conscience et réfléchir — en privé sur ton appareil.</string>
+    <string name="onboarding_get_started">Commencer</string>
+    <string name="onboarding_starting">Démarrage…</string>
+    <string name="practices_title">Pratiques</string>
+    <string name="practice_start">Démarrer</string>
+    <string name="practice_finish">Terminer la pratique</string>
+    <string name="practice_pause">Pause</string>
+    <string name="practice_reset">Réinitialiser</string>
+    <string name="practice_great_job">Bien joué !</string>
+    <string name="practice_minutes">%1$d min</string>
+    <string name="practice_card_a11y">%1$s, %2$d min</string>
+    <string name="settings_language_spanish">Español</string>
+    <string name="settings_language_german">Deutsch</string>
+    <string name="settings_language_french">Français</string>
+    <string name="settings_language_portuguese_br">Português (Brasil)</string>
+    <string name="settings_language_portuguese">Português</string>
+    <string name="settings_language_dutch">Nederlands</string>
+</resources>
