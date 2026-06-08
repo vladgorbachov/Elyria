@@ -1,42 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  DRAFT TRANSLATIONS — Step 6.M-A.3 (2026-06-06)
-  German (de) UI translations, machine-drafted by Claude.
-  ALL 135 keys in this file are DRAFT and require native speaker review
-  before release.
+  REVIEWED TRANSLATIONS — Step 6.M-A.3-R (2026-06-07)
+  German (de) UI translations. Originally machine-drafted in Step
+  6.M-A.3 (commit 26e8787) and then reviewed by native German
+  speaker (Conrad).
 
-  Critical strings (safety / medical disclaimer / user prompt) require
-  professional translation, not just casual review:
-    disclaimer_short
-    companion_disclaimer
-    mood_select_required
-    settings_privacy_note
-    companion_response_fallback
+  Key decisions made by Conrad:
+   - Mood concept stays as "Stimmung".
+   - "Achtsamkeit" used for mindfulness (German native term).
+   - "Check-in" kept as English loanword for lightweight interactions;
+     "Stimmungseintrag" or "Stimmungs-Check-in" used for clarity in
+     some places.
+   - "Einblicke" used for Insights (not "Erkenntnisse" / "Analyse").
+   - "Elyria-Begleitung" (not "Elyria-Begleiter") — softer and less
+     personified.
+   - "Bewegung" (not "Sport") for the exercise trigger.
+   - "du"-form throughout.
+   - "Gut gemacht!" (not "Großartig gemacht!") for practice
+     completion — natural and not exaggerated.
 
-  Base tone: informal du-form, wellbeing register, gender-neutral
-  (German wellbeing-app convention — Headspace DE, Calm DE).
+   - Emotions changed from nouns to ADJECTIVES in lowercase predicate
+     form (grammatically correct in German, gender-neutral):
+       traurig, ängstlich, wütend, müde, einsam, überfordert,
+       ruhig, hoffnungsvoll, dankbar, stolz, friedlich, motiviert
+     This differs from RU/UK/RO (which use nouns) but is natural for
+     German chip-button UI per native speaker. Lowercase contrasts
+     visually with other strings (which start with capital letters
+     because they're nouns), but is grammatically required.
 
-  Translation choices to flag for native reviewer:
-   - "Stimmung" used for "mood" everywhere (most common German wellbeing
-     term). Alternatives: "Gemütszustand", "Befinden".
-   - "Achtsamkeit" used for "mindfulness" (established German term).
-     Alternative: keep English "Mindfulness" as loanword.
-   - "Check-in" kept as English loanword. Alternative: "Eintrag".
-   - "Begleiter" used for "Companion" (in compound "Elyria-Begleiter").
-   - Emotions translated as nouns (Traurigkeit, Angst, Wut, Müdigkeit,
-     Einsamkeit, Überforderung, Ruhe, Hoffnung, Dankbarkeit, Stolz,
-     Frieden, Motivation) — consistent with RU/UK/RO. Alternative is
-     adjective form (traurig, ängstlich, wütend, müde, einsam,
-     überfordert, ruhig, hoffnungsvoll, dankbar, stolz, friedlich,
-     motiviert) which would be more in line with the Spanish review.
-   - "Willkommen zurück" used for home greeting (gender-neutral in
-     German — no Spanish-style "Bienvenido"/"Bienvenida" issue).
+   - Space before ellipsis (e.g. "Startet …", "Elyria nimmt sich
+     einen Moment …", "Elyria bereitet eine sanfte Reflexion vor …")
+     is intentional German typography.
 
-  See companion review document: Step_6MA3_German_Review.md
+   - All 5 critical strings revised for naturalness:
+     stronger and clearer disclaimer wording ("ersetzt keine" instead
+     of "ist kein Ersatz für"), softer prompts with "Bitte" prefix
+     where appropriate, "Hilfe" instead of "Begleitung" in the
+     Companion safety disclaimer.
+
+  No DRAFT markers remain. This file is release-ready for German.
 -->
 <resources>
     <string name="app_name">Elyria</string>
-    <string name="disclaimer_short">Elyria ist kein Ersatz für professionelle Therapie oder medizinische Versorgung.</string>
+    <string name="disclaimer_short">Elyria ersetzt keine professionelle Therapie oder medizinische Versorgung.</string>
     <string name="nav_home">Start</string>
     <string name="nav_mood">Stimmung</string>
     <string name="nav_practices">Übungen</string>
@@ -44,27 +50,27 @@
     <string name="nav_settings">Mehr</string>
     <string name="mood_save">Stimmung speichern</string>
     <string name="mood_saved">Stimmung gespeichert</string>
-    <string name="mood_select_required">Wähle eine Stimmung aus, um fortzufahren</string>
+    <string name="mood_select_required">Bitte wähle eine Stimmung aus, um fortzufahren</string>
     <string name="insights_period_week">Woche</string>
     <string name="insights_period_month">Monat</string>
     <string name="elyria_reflection_title">Elyria-Reflexion</string>
-    <string name="elyria_reflection_loading">Eine sanfte Reflexion wird vorbereitet…</string>
-    <string name="elyria_reflection_empty">Trage ein paar Stimmungseinträge ein, um eine persönliche Reflexion zu erhalten.</string>
-    <string name="elyria_reflection_error">Die Reflexion ist gerade nicht verfügbar, aber deine Einblicke bleiben auf diesem Gerät gespeichert.</string>
-    <string name="companion_title">Elyria-Begleiter</string>
-    <string name="companion_disclaimer">Elyria ersetzt keine professionelle Begleitung.</string>
-    <string name="companion_input_placeholder">Schreibe, was dich beschäftigt…</string>
+    <string name="elyria_reflection_loading">Elyria bereitet eine sanfte Reflexion vor …</string>
+    <string name="elyria_reflection_empty">Trage ein paar Stimmungseinträge ein, damit Elyria dir eine persönliche Reflexion anbieten kann.</string>
+    <string name="elyria_reflection_error">Eine Reflexion ist gerade nicht verfügbar, aber deine Stimmungseinblicke bleiben auf diesem Gerät gespeichert.</string>
+    <string name="companion_title">Elyria-Begleitung</string>
+    <string name="companion_disclaimer">Elyria ersetzt keine professionelle Hilfe.</string>
+    <string name="companion_input_placeholder">Was beschäftigt dich gerade?</string>
     <string name="companion_send">Senden</string>
-    <string name="companion_reflecting">Elyria reflektiert…</string>
-    <string name="companion_welcome">Hallo, ich bin hier für einen sanften Check-in. Worüber möchtest du nachdenken?</string>
-    <string name="companion_empty_message">Schreibe ein paar Worte, bevor du sendest.</string>
-    <string name="companion_error">Die Reflexion ist gerade nicht verfügbar.</string>
-    <string name="home_companion_title">Sprich mit Elyria</string>
-    <string name="home_companion_body">Teile ein paar Worte und erhalte eine sanfte Reflexion auf dem Gerät.</string>
-    <string name="home_companion_action">Begleiter öffnen</string>
-    <string name="insights_ask_companion">Frag Elyria dazu</string>
+    <string name="companion_reflecting">Elyria nimmt sich einen Moment …</string>
+    <string name="companion_welcome">Hallo, ich bin für einen sanften Check-in da. Worüber möchtest du nachdenken?</string>
+    <string name="companion_empty_message">Bitte schreib ein paar Worte, bevor du sendest.</string>
+    <string name="companion_error">Eine Reflexion ist gerade nicht verfügbar.</string>
+    <string name="home_companion_title">Mit Elyria sprechen</string>
+    <string name="home_companion_body">Teile ein paar Worte und erhalte eine sanfte Reflexion direkt auf deinem Gerät.</string>
+    <string name="home_companion_action">Elyria öffnen</string>
+    <string name="insights_ask_companion">Elyria dazu fragen</string>
     <string name="settings_title">Einstellungen</string>
-    <string name="settings_appearance">Erscheinungsbild</string>
+    <string name="settings_appearance">Darstellung</string>
     <string name="settings_theme">Design</string>
     <string name="settings_theme_system">System</string>
     <string name="settings_theme_light">Hell</string>
@@ -73,35 +79,35 @@
     <string name="settings_export_data">Daten exportieren</string>
     <string name="settings_delete_all_data">Alle Daten löschen</string>
     <string name="settings_delete_confirm_title">Alle Daten löschen?</string>
-    <string name="settings_delete_confirm_body">Stimmungs- und Tagebucheinträge auf diesem Gerät werden entfernt. Das kann nicht rückgängig gemacht werden.</string>
+    <string name="settings_delete_confirm_body">Dadurch werden die auf diesem Gerät gespeicherten Stimmungs- und Tagebucheinträge gelöscht. Das kann nicht rückgängig gemacht werden.</string>
     <string name="settings_delete_confirm_action">Löschen</string>
     <string name="settings_delete_cancel">Abbrechen</string>
-    <string name="settings_export_success">Export erfolgreich gespeichert.</string>
-    <string name="settings_export_failure">Export fehlgeschlagen. Versuche es erneut.</string>
-    <string name="settings_export_no_data">Noch keine Stimmungs- oder Tagebuchdaten zum Exportieren.</string>
-    <string name="settings_delete_success">Alle Stimmungs- und Tagebuchdaten wurden von diesem Gerät entfernt.</string>
-    <string name="settings_delete_failure">Daten konnten nicht gelöscht werden. Versuche es erneut.</string>
-    <string name="settings_theme_failure">Design konnte nicht aktualisiert werden. Versuche es erneut.</string>
+    <string name="settings_export_success">Die Exportdatei wurde gespeichert.</string>
+    <string name="settings_export_failure">Der Export ist fehlgeschlagen. Bitte versuche es erneut.</string>
+    <string name="settings_export_no_data">Noch keine Stimmungs- oder Tagebuchdaten zum Exportieren vorhanden.</string>
+    <string name="settings_delete_success">Alle Stimmungs- und Tagebuchdaten wurden von diesem Gerät gelöscht.</string>
+    <string name="settings_delete_failure">Die Daten konnten nicht gelöscht werden. Bitte versuche es erneut.</string>
+    <string name="settings_theme_failure">Das Design konnte nicht aktualisiert werden. Bitte versuche es erneut.</string>
     <string name="settings_safety">Sicherheit</string>
-    <string name="settings_privacy_note">Deine Stimmungs- und Tagebuchdaten bleiben auf diesem Gerät, es sei denn, du exportierst sie. Elyria lädt deine Einträge nicht hoch.</string>
-    <string name="settings_crisis_placeholder">Krisenressourcen — bald verfügbar</string>
+    <string name="settings_privacy_note">Deine Stimmungs- und Tagebuchdaten bleiben auf diesem Gerät, sofern du sie nicht exportierst. Elyria lädt deine Einträge nicht hoch.</string>
+    <string name="settings_crisis_placeholder">Krisenhilfe — bald verfügbar</string>
     <string name="mood_log_title">Stimmung eintragen</string>
-    <string name="mood_log_emotions_title">Was fühlt sich am nächsten an?</string>
-    <string name="mood_log_triggers_title">Was könnte das beeinflusst haben?</string>
+    <string name="mood_log_emotions_title">Was passt gerade am besten?</string>
+    <string name="mood_log_triggers_title">Was könnte dazu beigetragen haben?</string>
     <string name="mood_log_note_label">Notiz (optional)</string>
-    <string name="mood_log_tags_hint">Optional — wähle bis zu 3 aus</string>
-    <string name="emotion_sad">Traurigkeit</string>
-    <string name="emotion_anxious">Angst</string>
-    <string name="emotion_angry">Wut</string>
-    <string name="emotion_tired">Müdigkeit</string>
-    <string name="emotion_lonely">Einsamkeit</string>
-    <string name="emotion_overwhelmed">Überforderung</string>
-    <string name="emotion_calm">Ruhe</string>
-    <string name="emotion_hopeful">Hoffnung</string>
-    <string name="emotion_grateful">Dankbarkeit</string>
-    <string name="emotion_proud">Stolz</string>
-    <string name="emotion_peaceful">Frieden</string>
-    <string name="emotion_motivated">Motivation</string>
+    <string name="mood_log_tags_hint">Optional — wähle bis zu drei aus</string>
+    <string name="emotion_sad">traurig</string>
+    <string name="emotion_anxious">ängstlich</string>
+    <string name="emotion_angry">wütend</string>
+    <string name="emotion_tired">müde</string>
+    <string name="emotion_lonely">einsam</string>
+    <string name="emotion_overwhelmed">überfordert</string>
+    <string name="emotion_calm">ruhig</string>
+    <string name="emotion_hopeful">hoffnungsvoll</string>
+    <string name="emotion_grateful">dankbar</string>
+    <string name="emotion_proud">stolz</string>
+    <string name="emotion_peaceful">friedlich</string>
+    <string name="emotion_motivated">motiviert</string>
     <string name="trigger_work">Arbeit</string>
     <string name="trigger_study">Lernen</string>
     <string name="trigger_family">Familie</string>
@@ -115,53 +121,53 @@
     <string name="trigger_exercise">Bewegung</string>
     <string name="trigger_unknown">Sonstiges</string>
     <string name="insights_patterns_title">Muster</string>
-    <string name="insights_patterns_empty">Trage Einträge mit Emotionen oder Auslösern ein, um sanfte Muster hier zu sehen.</string>
-    <string name="insights_top_emotions">Häufig bemerkte Emotionen</string>
-    <string name="insights_top_triggers">Könnte mit deiner Stimmung verbunden sein</string>
-    <string name="insights_low_mood_triggers">Erscheint oft an niedrigeren Tagen</string>
+    <string name="insights_patterns_empty">Füge Check-ins mit Emotionen oder Auslösern hinzu, damit hier sanfte Muster sichtbar werden.</string>
+    <string name="insights_top_emotions">Häufig wahrgenommene Emotionen</string>
+    <string name="insights_top_triggers">Könnte mit deiner Stimmung zusammenhängen</string>
+    <string name="insights_low_mood_triggers">Taucht oft an schwierigeren Tagen auf</string>
     <string name="insights_daily_mood">Tägliche Stimmung</string>
     <string name="home_garden_title">Innerer Garten</string>
-    <string name="home_garden_body">Dein Garten wächst mit sanften Check-ins.</string>
-    <string name="home_quick_mood">Schneller Check-in</string>
+    <string name="home_garden_body">Dein Garten wächst durch sanfte Check-ins.</string>
+    <string name="home_quick_mood">Kurzer Stimmungs-Check-in</string>
     <string name="home_log_mood">Stimmung eintragen</string>
-    <string name="home_greeting">Willkommen zurück</string>
-    <string name="home_greeting_with_mood">Willkommen zurück — letzte Stimmung: %1$s</string>
-    <string name="home_day_streak">%1$d Tage in Folge</string>
-    <string name="home_day_streak_label">Tage in Folge</string>
-    <string name="home_best_streak">Bestleistung: %1$d Tage</string>
+    <string name="home_greeting">Schön, dass du wieder da bist</string>
+    <string name="home_greeting_with_mood">Schön, dass du wieder da bist — letzte Stimmung: %1$s</string>
+    <string name="home_day_streak">%1$d Tage am Stück</string>
+    <string name="home_day_streak_label">Tage am Stück</string>
+    <string name="home_best_streak">Rekord: %1$d Tage</string>
     <string name="home_suggested_practice">Empfohlene Übung</string>
     <string name="insights_title">Einblicke</string>
-    <string name="insights_average">Durchschnitt: %1$s / 5 · %2$s</string>
+    <string name="insights_average">Durchschnitt: %1$s von 5 · %2$s</string>
     <string name="insights_most_frequent">Am häufigsten: %1$s</string>
     <string name="insights_trend_up">steigend</string>
     <string name="insights_trend_down">fallend</string>
     <string name="insights_trend_stable">stabil</string>
-    <string name="insights_companion_prefill">Kannst du mir helfen, dieses Stimmungsmuster zu verstehen?</string>
+    <string name="insights_companion_prefill">Kannst du mir helfen, dieses Stimmungsmuster besser zu verstehen?</string>
     <string name="mood_level_very_low">Sehr niedrig</string>
     <string name="mood_level_low">Niedrig</string>
     <string name="mood_level_neutral">Neutral</string>
     <string name="mood_level_good">Gut</string>
-    <string name="mood_level_great">Großartig</string>
+    <string name="mood_level_great">Sehr gut</string>
     <string name="mood_log_note_counter">%1$d/200</string>
-    <string name="mood_save_failed">Stimmung konnte nicht gespeichert werden.\nVersuche es erneut.</string>
-    <string name="companion_response_fallback">Ich habe gerade Schwierigkeiten zu antworten, aber deine Stimmungsdaten bleiben privat auf diesem Gerät.</string>
+    <string name="mood_save_failed">Deine Stimmung konnte nicht gespeichert werden.\nBitte versuche es erneut.</string>
+    <string name="companion_response_fallback">Ich kann gerade nicht antworten, aber deine Stimmungsdaten bleiben privat auf diesem Gerät.</string>
     <string name="settings_language_title">Sprache</string>
     <string name="settings_language_system">System</string>
     <string name="settings_language_english">English</string>
     <string name="settings_language_russian">Русский</string>
     <string name="settings_language_ukrainian">Українська</string>
     <string name="settings_language_romanian">Română</string>
-    <string name="settings_language_failure">Sprache konnte nicht aktualisiert werden. Versuche es erneut.</string>
+    <string name="settings_language_failure">Die Sprache konnte nicht aktualisiert werden. Bitte versuche es erneut.</string>
     <string name="a11y_back">Zurück</string>
-    <string name="onboarding_tagline">Ein ruhiger Raum, um deine Stimmung zu verfolgen, Achtsamkeit zu üben und zu reflektieren — privat auf deinem Gerät.</string>
+    <string name="onboarding_tagline">Ein ruhiger Ort, an dem du deine Stimmung festhalten, Achtsamkeit üben und reflektieren kannst — privat auf deinem Gerät.</string>
     <string name="onboarding_get_started">Loslegen</string>
-    <string name="onboarding_starting">Wird gestartet…</string>
+    <string name="onboarding_starting">Startet …</string>
     <string name="practices_title">Übungen</string>
     <string name="practice_start">Starten</string>
-    <string name="practice_finish">Übung beenden</string>
+    <string name="practice_finish">Übung abschließen</string>
     <string name="practice_pause">Pause</string>
     <string name="practice_reset">Zurücksetzen</string>
-    <string name="practice_great_job">Großartig gemacht!</string>
+    <string name="practice_great_job">Gut gemacht!</string>
     <string name="practice_minutes">%1$d Min.</string>
     <string name="practice_card_a11y">%1$s, %2$d Min.</string>
     <string name="settings_language_spanish">Español</string>
